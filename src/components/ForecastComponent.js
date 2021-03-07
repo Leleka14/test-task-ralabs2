@@ -4,6 +4,7 @@ import { Accordion, Card, Row, Container } from 'react-bootstrap';
 
 const ForecastComponent = props => {
 
+    //creates description
     const createDescription = (temp, rain, clouds, wind) => {
         let text = '';
         let arrayForHotWeather = [
@@ -65,12 +66,14 @@ const ForecastComponent = props => {
         return text;
     };
 
+    //creates formated date
     const createFormatedDate = date => {
         const newDate = new Date(date)
         const formatDate = `${newDate.getDate()} ${new Intl.DateTimeFormat('en-US', {month: "long"}).format(newDate)}`
         return formatDate;
     }
 
+    //renders list of weather if props.weatherData exists
     const RenderList = () => {
         if(props.weatherData){
             console.log(props.weatherData)

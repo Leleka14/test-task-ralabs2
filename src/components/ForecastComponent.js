@@ -52,12 +52,12 @@ const ForecastComponent = props => {
         let arrayForPowerWind = [
             "It also will be windy."
         ];
-        if(temp >= 18) text += `${arrayForHotWeather[Math.floor(Math.random() * (3))]}`
-        if(temp >= 10 && temp < 18) text += ` ${arrayForCoolWeather[Math.floor(Math.random() * (3))]}`
-        if(temp < 10) text += ` ${arrayForColdWeather[Math.floor(Math.random() * (3))]}`
-        if(rain < 10) text += ` ${arrayForNoRain[Math.floor(Math.random() * (3))]}`
-        if(rain >= 10 && rain < 50) text += ` ${arrayForSmallProbRain[Math.floor(Math.random() * (3))]}`
-        if(rain >= 50) text += ` ${arrayForRain[Math.floor(Math.random() * (3))]}`
+        if(temp >= 18) text += `${arrayForHotWeather[Math.floor(Math.random() * arrayForHotWeather.length)]}`
+        if(temp >= 10 && temp < 18) text += ` ${arrayForCoolWeather[Math.floor(Math.random() * arrayForCoolWeather.length)]}`
+        if(temp < 10) text += ` ${arrayForColdWeather[Math.floor(Math.random() * arrayForColdWeather.length)]}`
+        if(rain < 10) text += ` ${arrayForNoRain[Math.floor(Math.random() * arrayForNoRain.length)]}`
+        if(rain >= 10 && rain < 50) text += ` ${arrayForSmallProbRain[Math.floor(Math.random() * arrayForSmallProbRain.length)]}`
+        if(rain >= 50) text += ` ${arrayForRain[Math.floor(Math.random() * arrayForRain.length)]}`
         if(clouds >= 70) text += ` ${arrayForClouds[0]}`
         if(clouds < 70 && clouds >= 30) text += ` ${arrayForHalfClouds[0]}`
         if(clouds < 30) text += ` ${arrayForClearSky[0]}`

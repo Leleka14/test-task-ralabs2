@@ -20,7 +20,7 @@ const ForecastComponent = props => {
         let arrayForColdWeather = [
             "I recommend you to wear coat, temparature would be less than 10°.",
             "Be careful, it seems like it's still cool weather, but it's not.",
-            "It's easy to catch a cold, you should put on something warm."
+            "It's easy to catch a cold in that weather, you should put on something warm."
         ];
         let arrayForNoRain = [
             "No rain at all.",

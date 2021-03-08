@@ -7,7 +7,7 @@
 * [Technologies](#technologies)
 
 ## General Info
-This project is second version of my test task for Ralabs company. It is a simple website built with React that allows you to see weather forecast in your current location or any other city. I've also used Bootstrap, Reactstrap and Font-awesome to make it look more user-friendly. I've fetched data about weather from https://www.weatherbit.io and defined user's current position using http://api.positionstack.com APIs.
+This project is second version of my test task for Ralabs company. It is a simple website built with React that allows you to see weather forecast in your current location or any other city. I've also used Bootstrap, Reactstrap and Font-awesome to make it look more user-friendly. I've fetched data about weather from https://www.weatherbit.io and defined user's current position using http://api.positionstack.com APIs. Your current location couldn't be defined on github-pages because github-pages uses HTTPS protocol whether http://api.positionstack.com uses HTTP and HTTPS can be used by paid subscription.
 
 ## Getting started
 You can install this project locally using npm:

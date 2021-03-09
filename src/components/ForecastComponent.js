@@ -41,7 +41,7 @@ const ForecastComponent = props => {
             "Sky would be clear."
         ];
         let arrayForClouds = [
-            "It will cloudy."
+            "It will be cloudy."
         ];
         let arrayForHalfClouds = [
             "Half of sky will be in clouds."
